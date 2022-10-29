@@ -1,0 +1,63 @@
+.pink {
+    background-color: lightpink;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.master {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+}
+
+@media (min-width:601px) and (max-width:1000px) {
+    .master {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .master {
+        grid-template-columns: 100%;
+    }
+}
+
+.box {
+    border-radius: 30px;
+    border: 1px black solid;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.box {
+    padding: .5em;
+    text-align: center;
+}
+
+.content-header {
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    /*word-break:break-all*/
+    
+}
+
+ul {
+    padding:0;
+    width:100%
+}
+
+li {
+    padding-bottom: .75em;
+    list-style: none;
+}
